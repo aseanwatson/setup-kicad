@@ -17,7 +17,7 @@ sudo add-apt-repository ppa:kicad/kicad-$1-releases
 sudo apt-get update
 sudo apt-get install --yes kicad
 
-KICADCONFDIR="~/.config/kicad/8.0"
+KICADCONFDIR="~/.config/kicad/$1"
 mkdir -p "$KICADCONFDIR"
 cp /usr/share/kicad/template/sym-lib-table "$KICADCONFDIR"
 cp /usr/share/kicad/template/fp-lib-table "$KICADCONFDIR"
